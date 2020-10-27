@@ -25,14 +25,14 @@ int main()
             fprintf(fp,"%s		%d		%d		%1.2f",item,number,quantity,price);
     }
     fclose(fp);
-    printf(\n\n);
+    printf("\n\n");
     
     fp=fopen(filename,"r");
     printf("item name		name		number		quqntity		price		value\n");
     
     for(i=1;  i<=3;  i++)
     {
-	     fscanf(fp,	"%s		%d		%d		%f",  item, &number, &quantity, price,);
+	     fscanf(fp,	"%s		%d		%d		%f",  item, &number, &quantity, price);
 	     value=price*quantity;
 	     printf("%s		%d		%d		%1.2f\n", item, number, quantity, price, value);
 	}
