@@ -53,7 +53,7 @@
 							<td><input type="text" id="Difference" readonly></td>
 						</tr>
 						<tr>
-							<td><button type="button" onclick="subtract"()">Subtract</button></td>
+							<td><button type="button" onclick="subtract()">Subtract</button></td>
 							<td><button type="reset">Reset</button></td>
 						</tr>
 					</table>
@@ -67,18 +67,18 @@
 						</tr>
 						<tr>
 							<td>Multiplicand</td>
-							<td><input type="text"></td>
+							<td><input type="text" id="Multiplicand"></td>
 						</tr>
 						<tr>
 							<td>Multiplier</td>
-							<td><input type="text"></td>
+							<td><input type="text" id="Multiplier"></td>
 						</tr>
 						<tr>
 							<td>Product</td>
-							<td><input type="text"></td>
+							<td><input type="text" id="Product"></td>
 						</tr>
 						<tr>
-							<td><button type="button" oneclick="multiply"()>Multipy</button></td>
+							<td><button type="button" onclick="multiply()">Multipy</button></td>
 							<td><button type="reset">Reset</button></td>
 						</tr>
 					</table>
@@ -94,22 +94,22 @@
 						</tr>
 						<tr>
 							<td>Dividend</td>
-							<td><input type="text"></td>
+							<td><input type="text" id="Dividend"></td>
 						</tr>
 						<tr>
 							<td>Divisor</td>
-							<td><input type="text"></td>
+							<td><input type="text" id="Divisor"></td>
 						</tr>
 						<tr>
 							<td>Quotient</td>
-							<td><input type="text"></td>
+							<td><input type="text" id="Quotient"></td>
 						</tr>
 						<tr>
 							<td>Remainder</td>
-							<td><input type="text"></td>
+							<td><input type="text" id="Remainder"></td>
 						</tr>
 						<tr>
-							<td><button type="button" oneclick="divide"()>Divide</button></td>
+							<td><button type="button" onclick="divide()">Divide</button></td>
 							<td><button type="reset">Reset</button></td>
 						</tr>
 					</table>
@@ -123,14 +123,14 @@
 						</tr>
 						<tr>
 							<td>Number</td>
-							<td><input type="text"></td>
+							<td><input type="text" id="Number"></td>
 						</tr>
 						<tr>
 							<td>Even/Odd</td>
-							<td><input type="text"></td>
+							<td><input type="text" id="EvenOdd"></td>
 						</tr>
 						<tr>
-							<td><button type="button" oneclick="even/odd>Find</button></td>
+							<td><button type="button" onclick="evenodd()">Find</button></td>
 							<td><button type="reset">Reset</button></td>
 						</tr>
 					</table>
@@ -144,35 +144,44 @@
 						</tr>
 						<tr>
 							<td>Year</td>
-							<td><input type="text"></td>
+							<td><input type="text" id="Year"></td>
 						</tr>
 						<tr>
 							<td>Leap/Common</td>
-							<td><input type="text"></td>
+							<td><input type="text" id="LeapCommon"></td>
 						</tr>
 						<tr>
-							<td><button  type="button" oneclick="leap/common">Find</button></td>
+							<td><button  type="button" onclick="leapcommon()">Find</button></td>
 							<td><button type="reset">Reset</button></td>
 						</tr>
 					</table>
 					</form>
 				</td>
+			</tr>
+			<tr>
 				<td>
 					<form>
 					<table>
-							<tr>
-								<td align="centre" colspan="2"><h3>marks</h3></td>
+						<tr>
+							<td align="centre" colspan="2"><h3>Marks</h3></td>
 							</tr>
 							<tr>
-								<td>marks</td>
-								<td>percentage</td>
+								<td>Marks</td>
+								<td><input type="text" id="Marks">
 							</tr>
-							<tr><button type="button" oneclick="percentage">find</button></td>
-							<td><button type="reset">reset</button></td>
+							<tr>
+								<td>Percentage</td>
+								<td><input type="text" id="Percentage">
+							</tr>
+							<tr>
+								<td><button type="button" onclick="percentage">find</button></td>
+								<td><button type="reset">reset</button></td>
 						</tr>
 					</table>
 					</form>
 				</td>
+			</tr>
+		</table>
 		<script>
 			function add()
 			{
@@ -193,45 +202,57 @@
 				c = a - b;
 				document.getElementById('Difference').value = c.toString();
 			}
-			
-			function multiplication()
+			function multiply()
 			{
 				var a, b, c;
 				
-				a = parseInt(document.getElementById('multiplicand').value);
-				b = parseInt(document.getElementById('multiplyer').value);
+				a = parseInt(document.getElementById('Multiplicand').value);
+				b = parseInt(document.getElementById('Multiplier').value);
 				c = a * b;
-				document.getElementById('product').value = c.toString();
+				document.getElementById('Product').value = c.toString();
+			}
+			function divide()
+			{
+				var dd, dv, q, r;
+				
+				dd = parseInt(document.getElementById('Dividend').value);
+				dv = parseInt(document.getElementById('Divisor').value);
+				q = parseInt(dd/dv);
+				r = dd%dv;
+				document.getElementById('Quotient').value = q.toString();
+				document.getElementById('Remainder').value = r.toString();
 			}
 			
-			function division()
+			function evenodd()
 			{
-				var a, d, q, r;
+				var n;
 				
-				a = parseInt(document.getElementById('divident').value);
-				d = parseInt(document.getElementById('divisior').value);
-				q = parseInt(document.getElementById('quotients').value);
-				r = parseInt(document.getElementById('remainder').value);
-				a =b*q+r
-				document.getElementById('division').value = a.toString();
+				n = parseInt(document.getElementById('Number').value);
+
+				if(n%2==0)
+				{
+					document.getElementById('EvenOdd').value = "Even";
+				}
+				else
+				{
+					document.getElementById('EvenOdd').value = "Odd";
+				}
 			}
-			function even/odd()
+			
+			function leapcommon()
 			{
-				var a, b;
+				var yr;
 				
-				a = parseInt(document.getElementById('if(n^2==0)even').value);
-				b = parseInt(document.getElementById('else odd').value);
-				a = eaven	b = odd
-				document.getElementById('even/odd').value = a,b.toString();
-			}
-			function leap/common()
-			{
-				var a, b, c;
+				yr = parseInt(document.getElementById('Year').value);
 				
-				a = parseInt(document.getElementById('if(n^4==0)leap year').value);
-				b = parseInt(document.getElementById('else comman year').value);
-				a = leap year  b =common year 
-				document.getElementById('leap/common').value = a,b.toString
+				if((yr%4==0 && yr%100!=0) || yr%400==0)
+				{
+					document.getElementById('LeapCommon').value = "Leap Year";
+				}
+				else
+				{
+					document.getElementById('LeapCommon').value = "Common Year";
+				}
 			}
 			
 			function percentage()
