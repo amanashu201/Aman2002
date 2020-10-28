@@ -1,0 +1,250 @@
+<html>
+	<head>
+		<title>Calculators</title>
+	</head>
+	
+	<body>
+		<table width="100%">
+			<tr>
+				<td align="center" colspan="3"><h1>Calculators</h1></td>
+			</tr>
+			<tr>
+				<td>
+					<form>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Addition</h3></td>
+						</tr>
+						<tr>
+							<td>Augend</td>
+							<td><input type="text" id="Augend"></td>
+						</tr>
+						<tr>
+							<td>Addend</td>
+							<td><input type="text" id="Addend"></td>
+						</tr>
+						<tr>
+							<td>Sum</td>
+							<td><input type="text" id="Sum" readonly></td>
+						</tr>
+						<tr>
+							<td><button type="button" onclick="add()">Add</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+					</form>
+				</td>
+				<td>
+					<form>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Subtraction</h3></td>
+						</tr>
+						<tr>
+							<td>Minuend</td>
+							<td><input type="text" id="Minuend"></td>
+						</tr>
+						<tr>
+							<td>Subtrahend</td>
+							<td><input type="text" id="Subtrahend"></td>
+						</tr>
+						<tr>
+							<td>Difference</td>
+							<td><input type="text" id="Difference" readonly></td>
+						</tr>
+						<tr>
+							<td><button type="button" onclick="subtract"()">Subtract</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+					</form>
+				</td>
+				<td>
+				    <form>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Multiplication</h3></td>
+						</tr>
+						<tr>
+							<td>Multiplicand</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Multiplier</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Product</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button type="button" oneclick="multiply"()>Multipy</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				    <form>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Division</h3></td>
+						</tr>
+						<tr>
+							<td>Dividend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Divisor</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Quotient</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Remainder</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button type="button" oneclick="divide"()>Divide</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+					</form>
+				</td>
+				<td>
+				    <form>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Even/Odd</h3></td>
+						</tr>
+						<tr>
+							<td>Number</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Even/Odd</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button type="button" oneclick="even/odd>Find</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+					</form>
+				</td>
+				<td>
+				    <form>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Leap Year/ Common Year</h3></td>
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Leap/Common</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button  type="button" oneclick="leap/common">Find</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+					</form>
+				</td>
+				<td>
+					<form>
+					<table>
+							<tr>
+								<td align="centre" colspan="2"><h3>marks</h3></td>
+							</tr>
+							<tr>
+								<td>marks</td>
+								<td>percentage</td>
+							</tr>
+							<tr><button type="button" oneclick="percentage">find</button></td>
+							<td><button type="reset">reset</button></td>
+						</tr>
+					</table>
+					</form>
+				</td>
+		<script>
+			function add()
+			{
+				var a, b, c;
+				
+				a = parseInt(document.getElementById('Augend').value);
+				b = parseInt(document.getElementById('Addend').value);
+				c = a + b;
+				document.getElementById('Sum').value = c.toString();
+			}
+			
+			function subtract()
+			{
+				var a, b, c;
+				
+				a = parseInt(document.getElementById('Minuend').value);
+				b = parseInt(document.getElementById('Subtrahend').value);
+				c = a - b;
+				document.getElementById('Difference').value = c.toString();
+			}
+			
+			function multiplication()
+			{
+				var a, b, c;
+				
+				a = parseInt(document.getElementById('multiplicand').value);
+				b = parseInt(document.getElementById('multiplyer').value);
+				c = a * b;
+				document.getElementById('product').value = c.toString();
+			}
+			
+			function division()
+			{
+				var a, d, q, r;
+				
+				a = parseInt(document.getElementById('divident').value);
+				d = parseInt(document.getElementById('divisior').value);
+				q = parseInt(document.getElementById('quotients').value);
+				r = parseInt(document.getElementById('remainder').value);
+				a =b*q+r
+				document.getElementById('division').value = a.toString();
+			}
+			function even/odd()
+			{
+				var a, b;
+				
+				a = parseInt(document.getElementById('if(n^2==0)even').value);
+				b = parseInt(document.getElementById('else odd').value);
+				a = eaven	b = odd
+				document.getElementById('even/odd').value = a,b.toString();
+			}
+			function leap/common()
+			{
+				var a, b, c;
+				
+				a = parseInt(document.getElementById('if(n^4==0)leap year').value);
+				b = parseInt(document.getElementById('else comman year').value);
+				a = leap year  b =common year 
+				document.getElementById('leap/common').value = a,b.toString
+			}
+			
+			function percentage()
+			{
+				var a, b, c, d;
+				
+				a = parseInt(document.getElementById('hindi').value);
+				b = parseInt(document.getElementById('english').value);
+				c = parseInt(document.getElementById('maths').value);
+				d =a+b+c
+				% =d^3
+				document.getElementById('percentage').value = d,%c.toString();
+			}
+		</script>
+	</body>
+</html>
