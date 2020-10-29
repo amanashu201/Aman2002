@@ -166,15 +166,23 @@
 							<td align="centre" colspan="2"><h3>percentage</h3></td>
 							</tr>
 							<tr>
-								<td>Marks</td>
-								<td><input type="text" id="Marks">
+								<td>Hindi</td>
+								<td><input type="text" id="hindi">
+							</tr>
+							<tr>
+								<td>English</td>
+								<td><input type="text" id="english">
+							</tr>
+							<tr>
+								<td>Maths</td>
+								<td><input type="text" id="maths">
 							</tr>
 							<tr>
 								<td>Percentage</td>
 								<td><input type="text" id="Percentage"></td>
 							</tr>
 							<tr>
-								<td><button type="button" onclick="percentage">find</button></td>
+								<td><button type="button" onclick="percentage()">find</button></td>
 								<td><button type="reset">reset</button></td>
 						</tr>
 					</table>
@@ -194,10 +202,10 @@
 							</tr>
 							<tr>
 								<td>reverse string</td>
-								<td><input type="text" id="reverse string"></td>
+								<td><input type="text" id="reverse"></td>
 							</tr>
 							<tr>
-								<td><button type="button" onclick="reversestring">find</button></td>
+								<td><button type="button" onclick="reversestring()">find</button></td>
 								<td><button type="reset">reset</button></td>
 						</tr>
 					</table>
@@ -220,7 +228,7 @@
 								<td><input type="text" id="Pelindromeornot"></td>
 							</tr>
 							<tr>
-								<td><button type="button" onclick="pelindromeornot">find</button></td>
+								<td><button type="button" onclick="pelindromeornot()">find</button></td>
 								<td><button type="reset">reset</button></td>
 						</tr>
 					</table>
@@ -303,58 +311,33 @@
 			
 			function percentage()
 			{
-				var a, b, c, d;
+				var a, b, c, d, p;
 				
 				a = parseInt(document.getElementById('hindi').value);
 				b = parseInt(document.getElementById('english').value);
 				c = parseInt(document.getElementById('maths').value);
 				d =a+b+c;
-				% =d\3
-				document.getElementById('percentage').value = %.toString();
+				p =d/3;
+				document.getElementById('Percentage').value = p.toString();
+				alert('OK');
 			}
 			
-			function revrsestring()
+			function reversestring()
 			{
 			   
-			    var l,t;
+				var l, i, str, t;
 				
-				l = parseInt(document.getElementById('string').value);
+				str = parseInt(document.getElementById('string').value);
 			   
-			    while(str[i]!='\0')
-				{
-					document.getElementById('revrsestring').value ="length";
-				}
-				l=i;
+				l=4;
 				for(i=0;  i<=l/2;  i++)
 				{
 					t=str[i];
 					str[i]=str[l-1-i];
 					str[l-1-i]=t;
-					document.getElementById('revrsestring').value =
 				}
-				
-			    function pelindromeornot()
-				{
-				
-					var n, revnum=0, orgnum=0;
-					
-					n = parseInt(document,getElementsById('number').value);
-			        
-					while(n!=0)
-					{
-						rem = n%10;
-						revnum = orgnum*10+rem;
-					}
-					
-						if(orgnum==revnum)
-						{
-							document.getElementById('pelindromeornot').value = "pelindrome";
-						}
-						else 
-						{
-							document.getelementById('pelindromeornot').value ="notpelindrome";
-							
-			
+				document.getElementById('reverse').value = str;
+			}
 			
 		</script>
 	</body>
