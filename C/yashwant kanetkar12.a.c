@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main() 
+{ 
+    FILE *fp; 
+    int count = 0;  
+    char fname[100]; 
+    char c;  
+  
+    printf("Enter file name: "); 
+    scanf("%s", fname); 
+   
+    fp = fopen(fname, "r"); 
+
+    if (fp == NULL) 
+    { 
+        printf(" not open file %s", fname); 
+        return 0; 
+    } 
+  
+    for (c = getc(fp);
+		c != EOF;
+		c = getc(fp)) 
+        if (c == '\n')
+            count = count + 1; 
+   
+    fclose(fp); 
+    printf("The file %s has %d lines\n ", fname, count); 
+  
+    return 0; 
+} 

@@ -1,0 +1,5 @@
+input ("Enter a number", a)
+input ("Enter another number", b)
+c = a + b
+printf ("The sum is " + c)
+

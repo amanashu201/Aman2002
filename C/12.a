@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+	FILE *fp1, *fp2;
+	char ch;
+	fp1=fopen("hello.text","r");
+	fp2=fopen("hello.text","w");
+		
+	}
+
+}

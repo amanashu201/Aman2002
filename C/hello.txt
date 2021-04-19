@@ -1,0 +1,1 @@
+This is text file created for the requirements for solving problem b of chapter 12 of Let Us C.

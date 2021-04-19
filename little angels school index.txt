@@ -8,28 +8,392 @@
 		<table width="100%" height="670">
 			<tr height="100">
 				<td align="center" bgcolor="Tomato">
-					<h1><font color="White">Little Angels School - Academic</font></h1>
-				</td>
+					<h1><font col<html>
+	<head>
+		<title>Calculators</title>
+	</head>
+	
+	<body>
+		<table width="100%">
+			<tr>
+				<td align="center" colspan="3"><h1>Calculators</h1></td>
 			</tr>
-			
-			<tr height="50">
+			<tr>
 				<td>
-					<table bgcolor="lightgray" width="100%">
+					<table>
 						<tr>
-							<td><a href="index.htm">Home</a></td>
-							<td><a href="AboutUs.htm">About Us</a></td>
-							<td><a href="Admission.htm">Admission</a></td>
-							<td><a href="Academic.htm">Academic</a></td>
-							<td><a href="Gallery.htm">Gallery</a></td>
-							<td><a href="ContactUs.htm">Contact Us</a></td>
+							<td align="center" colspan="2"><h3>Addition</h3></td>
+						</tr>
+						<tr>
+							<td>Augend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Addend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Sum</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Add</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Subtraction</h3></td>
+						</tr>
+						<tr>
+							<td>Minuend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Subtrahend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Difference</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Subtract</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Multiplication</h3></td>
+						</tr>
+						<tr>
+							<td>Multiplicand</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Multiplier</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Product</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Multipy</button></td>
+							<td><button type="reset">Reset</button></td>
 						</tr>
 					</table>
 				</td>
 			</tr>
-			
-				<tr height="50" bgcolor="Tomato">
-				<td align="center"><font color="White">&copy2020, All rights reserved by Little Angels School</font></td>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Division</h3></td>
+						</tr>
+						<tr>
+							<td>Dividend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Divisor</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Quotient</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Remainder</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Divide</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Even/Odd</h3></td>
+						</tr>
+						<tr>
+							<td>Number</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Even/Odd</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Find</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Leap Year/ Common Year</h3></td>
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Leap/Common</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>pan="2"><h3>Addition</h3></td>
+						</tr>
+						<tr>
+							<td>Augend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Addend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Sum</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Add</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Subtraction</h3></td>
+						</tr>
+						<tr>
+							<td>Minuend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Subtrahend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Difference</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Subtract</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Multiplication</h3></td>
+						</tr>
+						<tr>
+							<td>Multiplicand</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Multiplier</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Product</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Multipy</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
 			</tr>
-		</table>
-	</body>
-</html>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Division</h3></td>
+						</tr>
+						<tr>
+							<td>Dividend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Divisor</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Quotient</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Remainder</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Divide</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Even/Odd</h3></td>
+						</tr>
+						<tr>
+							<td>Number</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Even/Odd</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Find</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Leap Year/ Common Year</h3></td>
+						</tr>
+						<tr>
+							<td>Year</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Leap/Common</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Find</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr><html>
+	<head>
+		<title>Calculators</title>
+	</head>
+	
+	<body>
+		<table width="100%">
+			<tr>
+				<td align="center" colspan="3"><h1>Calculators</h1></td>
+			</tr>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Addition</h3></td>
+						</tr>
+						<tr>
+							<td>Augend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Addend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Sum</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Add</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Subtraction</h3></td>
+						</tr>
+						<tr>
+							<td>Minuend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Subtrahend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Difference</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Subtract</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Multiplication</h3></td>
+						</tr>
+						<tr>
+							<td>Multiplicand</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Multiplier</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Product</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Multipy</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Division</h3></td>
+						</tr>
+						<tr>
+							<td>Dividend</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Divisor</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Quotient</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>Remainder</td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td><button>Divide</button></td>
+							<td><button type="reset">Reset</button></td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td align="center" colspan="2"><h3>Even/Odd</h3></td>
+						</tr>
+						<tr>
+							<td>Number</td>
+a

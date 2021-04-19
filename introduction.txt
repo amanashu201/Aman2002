@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: tomato
+ ;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: vardana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>introduce yourself in any interview</h1>
+<p>aman said:
+	Hii sir,
+	
+	i would like to thank you for giving opportunity to introduce myself.
+	
+	my name is aman singh, am 18 year old and belong to Bihar.
+	
+	i have complited my 12th from Ls.collage muzaffarpur with aggreate marks of 80% and complited my 10th from st.joseph's sr sec school from muzaffarpur with aggreate marks of 70%.
+	
+	coming to my family backgroud, i live in joint family having 10 member. my father is afarmer and my mother is housemaker.
+	
+	thats all about me.
+	
+	thank you.</p>
+
+</body>
+</html>

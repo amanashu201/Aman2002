@@ -1,0 +1,19 @@
+
+	File: is a collection of related information. Text, picture, song
+	
+	Generally to specify file type an extention is appended to a file
+	
+	prog1.c
+	prog1.cpp
+	prog1.java
+	page.htm
+	page.js
+	
+	
+	letter.docx
+	SolarSystem.pptx
+	
+	download: Bring information from a remote(far) computer.
+	upload: Send information to a remote(far) computer.
+	
+	sideload: Connect two similar devices to transfer data

@@ -1,0 +1,117 @@
+<html> 
+   <head> 
+   <body> 
+      <div class = title > Calculator</div>   
+	  <table border="4"> 
+     <tr> 
+            <td colspan="3"><input type="text" id="result"/></td> 
+       
+            <td><input type="button" value="c" onclick="document.getElementById('result').value='';" /> </td> 
+         </tr> 
+         <tr> 
+		 <td><input type="button" value="1" onclick="digit(1)"/> </td> 
+            <td><input type="button" value="2" onclick="digit(2)"/> </td> 
+            <td><input type="button" value="3" onclick="digit(3)"/> </td> 
+            <td><input type="button" value="/" onclick="divide()"/> </td> 
+         </tr
+		 <tr> 
+            <td><input type="button" value="4" onclick="digit(4)"/> </td> 
+            <td><input type="button" value="5" onclick="digit(5)"/> </td> 
+            <td><input type="button" value="6" onclick="digit(6)"/> </td> 
+            <td><input type="button" value="-" onclick="minus()"/> </td> 
+         </tr
+		 <tr> 
+            <td><input type="button" value="7" onclick="digit(7)"/> </td> 
+            <td><input type="button" value="8" onclick="digit(8)"/> </td> 
+            <td><input type="button" value="9" onclick="digit(9)"/> </td> 
+            <td><input type="button" value="+" onclick="plus()"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="." onclick="digit(.)"/> </td> 
+            <td><input type="button" value="0" onclick="digit(0)"/> </td> 
+            <td><input type="button" value="=" onclick="equal()"/> </td> 
+            <td><input type="button" value="*" onclick="multiply(*)"/> </td> 
+         </tr> 
+	  </table>
+	  <style> 
+         .title
+		 { 
+         margin-bottom: 5px; 
+         text-align:center; 
+         width: 221px; 
+         color: red; 
+         border: solid black 5px; 
+         } 
+		 input[type="button"] 
+         { 
+		 
+         background-color:black; 
+         color: white; 
+         border: solid black 5px; 
+         width:100% 
+         } 
+		 input[type="text"] 
+         { 
+         background-color:white; 
+         border: solid black 5px; 
+         width:100% 
+         } 
+		
+      </style> 
+	  <script>
+		var fno,sno, result, flag, ord=0;
+		
+		function digit(d) {
+			if(ord==1) {
+				document.getElementById('result').value = d;
+				ord = 0;
+			}
+			else {
+				document.getElementById('result').value = document.getElementById('result').value + d;
+			}
+		}
+		
+		function plus() {
+			fno = parseInt(document.getElementById('result').value);
+			//ord=0;sedereew32		`1
+			document.getElementById('result').value = '';
+			flag=1;
+		}
+		function minus() {
+			fno = parseInt(document.getElementById('result').value);
+			document.getElementById('result').value = '';
+			flag=2;
+		}
+		function multiply() {
+			fno = parseInt(document.getElementById('result').value);
+			document.getElementById('result').value = '';
+			flag=3;
+		}
+		function divide() {
+			fno = parseInt(document.getElementById('result').value);
+			document.getElementById('result').value = '';
+			flag=4;
+		}
+		
+		function equal() {
+			sno = parseInt(document.getElementById('result').value);
+			switch(flag)
+			{
+				case 1:
+					result = fno + sno;
+					break;
+				case 2:
+					result = fno - sno;
+					break;
+				case 3:
+					result = fno * sno;
+					break;
+				case 4:
+					result = fno / sno;
+			}
+			document.getElementById('result').value = ''.value;
+		}
+		
+	  </script>
+   </body> 
+</html>    

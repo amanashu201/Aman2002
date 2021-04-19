@@ -1,0 +1,53 @@
+
+	NEP - Coding (Skill)
+	
+	Whitehat Jr.	48 hours 1.5 Lac
+	
+	C, C++, Java	-	6 years to 18 years
+	
+	Scratch, Logo (Turtle) - 
+	
+	
+	
+	Real Life:
+		
+		Why software is needed?
+		 - Problem statement
+		 - Software Requirement Statement
+		 - Data Flow Diagram
+		 
+		 - Create users database/module
+		 - Create books database
+		 - Create member database
+		 - Keep record of issue and return
+		 - Keep track of condition and status of books.
+		 - Keep a record of user request for new book.
+		 - Booking (Mobile)
+		 - Reports
+		 
+	BCA
+	BTech
+	Diploma
+	
+	
+		Accurate Stock
+		
+		
+		Income and Expenditure
+		 
+		- Exact Stock
+		- No Sales Record (Except credit sales)
+		- No tract of exact profit/loss
+		- Fear of tax department
+		
+		
+		Salon Management System
+		
+		- Appointment
+		- Billing
+		
+		- Attendance
+		- Fingerprint Reader
+		
+		
+		
