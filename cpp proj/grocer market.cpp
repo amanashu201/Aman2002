@@ -1,5 +1,4 @@
 #include<iostream>
-//#include<process.h>
 #include<fstream>
 using namespace std;
 class product 
@@ -152,10 +151,7 @@ void delete_product() 					// function to delete record of file
     cout << "\n\n\tRecord Deleted ..";
     getchar();
 }
-void main()
-{
-	int 
-}
+
 void menu() 				/// function to display all products price list
 
 {

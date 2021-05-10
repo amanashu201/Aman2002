@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AMAN CODING</title>
+    <link rel="stylesheet" href="style.css">
+    <!--we have linked our css file-->
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href="website.html"> AMAN CODING</a>
+                <!----this if for the logo you can place img here-->
+            </div>
+            <nav>
+                <ul id='Menu Items'>
+                    <li><a href='#'> HOME</a></li>
+                    <li><a href='#'> About Us</a></li>
+                    <li><a href='#'> Services</a></li>
+                    <li><a href='#'> Contact</a></li>
+                    <li><button class='loginbtn'
+                    onclick="document.getElementById('login-form').style.display='block'"style="width:auto;">login</button>
+                    </li>
+                </ul>
+            </nav>
+            <!---navigatin bar is finish let run and see-->
+            <!--now  make style-->
+        </div>
+        <div id='login-form' class='login-page'>
+            <!--create form box-->
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button' onclick='login()' class='toggle-btn'> Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>register</button>
+                </div>
+                <!---creating login form-->
+                <form id='login' class='input-group-login'>
+                    <input type='text' class='input-field' placeholder='Email Id' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='checkbox' class='checkbox'><span>Remember password</span>  
+                    <button type='submit' class='submit-btn'>Log in</button>                  
+                </form>
+                <!---creating resistation form-->
+                <form id='register' class='input-group-registor'>
+                    <input type='text' class='input-field' placeholder='First Name' required>
+                    <input type='text' class='input-field' placeholder='Last Name' required>
+                    <input type='email' class='input-field' placeholder='Email Id' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='password' class='input-field' placeholder='Conform password' required>
+                    <input type='checkbox' class='checkbox' ><span> Agree to the term and condition</span>
+                    <button type='submit' class='submit-btn'>Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

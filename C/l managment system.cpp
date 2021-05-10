@@ -71,7 +71,7 @@ int main()
 	
 		break;
 
- 		case  4:
+ 		case 4:
 		printf ("List of Publishers : ");
 		for (i=0;i<count;i++)
 		{
